@@ -20,7 +20,7 @@ const Navbar = () => {
             <header className='header flex'>
                 <div className='logoDiv'>
                     <a href="#" className='logo'>
-                        <h1><MdOutlineTravelExplore className='icon' /> Aussie Vacay.</h1>
+                        <h1>Aussie Vacay.</h1>
                     </a>
                 </div>
 
