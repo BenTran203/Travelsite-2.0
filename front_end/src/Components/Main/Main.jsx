@@ -1,6 +1,9 @@
 import React from "react";
 import "./main.scss";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 
 import img1 from "../../Assets/Opera House.jpg";
 import img2 from "../../Assets/Great Barrier Reef.jpg";
@@ -10,7 +13,10 @@ import img5 from "../../Assets/Bondi Beach.jpg";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
+<<<<<<< HEAD
 // import { Data } from "../../Assets/data.json";
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 
 
 const Data = [
@@ -64,8 +70,11 @@ const Data = [
 ];
 
 const Main = () => {
+<<<<<<< HEAD
   const navigate = useNavigate();
 
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
   return (
     <section className="main container section">
       <div className="sec-title">
@@ -74,8 +83,11 @@ const Main = () => {
         </h2>
       </div>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
       <div className="sec-content grid">
         {Data.map(
           ({ id, imgSrc, desTitle, location, grade, fees, description }) => {
@@ -104,7 +116,11 @@ const Main = () => {
 
                   <button
                 className="btn flex"
+<<<<<<< HEAD
                 onClick={() => navigate(`/details/${id}`)} 
+=======
+                onClick={() => navigate(`/details/${id}`)}
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
               >
                 DETAILS <HiOutlineClipboardCheck className="icon" />
               </button>

@@ -29,7 +29,11 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.1.3",
+=======
+    "react-router-dom": "^7.1.1",
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
     "react-scripts": "^5.0.1",
     "sass": "^1.83.0"
   },
