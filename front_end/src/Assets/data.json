@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "imgSrc": "image1.jpg",
+      "desTitle": "Eiffel Tower",
+      "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+      "fees": "€25.50 for adults, €12.70 for children (Top Access)",
+      "description": "The Eiffel Tower is an iconic symbol of Paris, offering stunning views of the city. Visitors can enjoy dining, photo opportunities, and a rich history of this engineering marvel."
+    },
+    {
+      "id": 2,
+      "imgSrc": "image2.jpg",
+      "desTitle": "Grand Canyon",
+      "location": "Arizona, United States",
+      "fees": "$20 for individuals, $35 per vehicle (Park Entry)",
+      "description": "The Grand Canyon is a breathtaking natural wonder, carved by the Colorado River over millions of years. It's ideal for hiking, photography, and camping."
+    },
+    {
+      "id": 3,
+      "imgSrc": "image3.jpg",
+      "desTitle": "Machu Picchu",
+      "location": "Andes Mountains, Peru",
+      "fees": "$50 to $70 (Entry Fee)",
+      "description": "Machu Picchu is an ancient Incan citadel set high in the Andes Mountains. Known for its sophisticated dry-stone construction, it offers a glimpse into history and spectacular views."
+    },
+    {
+      "id": 4,
+      "imgSrc": "image4.jpg",
+      "desTitle": "Santorini",
+      "location": "Cyclades Islands, Greece",
+      "fees": "Free access, $20 to $50 for guided tours",
+      "description": "Santorini is a picturesque island known for its white-washed buildings, blue domes, and stunning sunsets. It's a popular destination for couples and families alike."
+    },
+    {
+      "id": 5,
+      "imgSrc": "image5.jpg",
+      "desTitle": "Great Wall of China",
+      "location": "China",
+      "fees": "¥40 to ¥60 depending on the section",
+      "description": "The Great Wall of China is a historic fortification and a UNESCO World Heritage site. It offers an unforgettable journey through history and panoramic landscapes."
+    }
+  ]
+  

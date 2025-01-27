@@ -1,5 +1,6 @@
 import React from "react";
 import "./main.scss";
+import { useNavigate } from "react-router-dom";
 
 import img1 from "../../Assets/Opera House.jpg";
 import img2 from "../../Assets/Great Barrier Reef.jpg";
@@ -9,6 +10,7 @@ import img5 from "../../Assets/Bondi Beach.jpg";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
+// import { Data } from "../../Assets/data.json";
 
 
 const Data = [
@@ -62,6 +64,8 @@ const Data = [
 ];
 
 const Main = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="main container section">
       <div className="sec-title">
@@ -69,6 +73,8 @@ const Main = () => {
           Most visited destinations
         </h2>
       </div>
+
+
 
       <div className="sec-content grid">
         {Data.map(
@@ -98,7 +104,7 @@ const Main = () => {
 
                   <button
                 className="btn flex"
-                onClick={() => navigate(`/details/${id}`)}
+                onClick={() => navigate(`/details/${id}`)} 
               >
                 DETAILS <HiOutlineClipboardCheck className="icon" />
               </button>

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import './app.scss'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home/Home'
 import Main from './Components/Main/Main'
 import Footer from './Components/Footer/Footer'
 import Chatbot from './Components/Chatbots/Chatbot';
-// import DetailsPage from './Components/Details/DetailsPage'
+import DetailsPage from './Components/Details/DetailsPage'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -17,22 +17,17 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         {/* Main Route */}
-        <Route path="/" element={
-          <>
-            <Home />
-            <Main />
-            <Footer />
-            <Chatbot />
-          </>
-        } />
-        {/* Route */}
-        {/* <Route path="/details/:id" element={<DetailsPage />} /> */}
+        <Route path="/" element={<> <Home /> <Main />   </>} />
+        {/* Other Route */}
+        <Route path="/details/:id" element={<DetailsPage />} />
       </Routes>
-    </Router>
+      <Footer />
+      <Chatbot />
+    </BrowserRouter>
   );
 }
 
