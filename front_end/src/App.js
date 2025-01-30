@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+=======
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
@@ -11,7 +15,11 @@ import Main from './Components/Main/Main'
 import Footer from './Components/Footer/Footer'
 import Chatbot from './Components/Chatbots/Chatbot';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import DetailsPage from './Components/Details/DetailsPage'
+=======
+// import DetailsPage from './Components/Details/DetailsPage'
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 // import DetailsPage from './Components/Details/DetailsPage'
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
@@ -26,6 +34,7 @@ const App = () => {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -38,6 +47,8 @@ const App = () => {
       <Chatbot />
     </BrowserRouter>
 =======
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
     <Router>
       <Navbar />
       <Routes>
@@ -54,6 +65,9 @@ const App = () => {
         {/* <Route path="/details/:id" element={<DetailsPage />} /> */}
       </Routes>
     </Router>
+<<<<<<< HEAD
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
+=======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
   );
 }

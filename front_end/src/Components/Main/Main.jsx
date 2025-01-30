@@ -1,7 +1,10 @@
 import React from "react";
 import "./main.scss";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 
@@ -14,7 +17,10 @@ import img5 from "../../Assets/Bondi Beach.jpg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import { Data } from "../../Assets/data.json";
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 
@@ -71,8 +77,11 @@ const Data = [
 
 const Main = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const navigate = useNavigate();
 
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
   return (
@@ -84,8 +93,11 @@ const Main = () => {
       </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
       <div className="sec-content grid">
@@ -117,7 +129,11 @@ const Main = () => {
                   <button
                 className="btn flex"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 onClick={() => navigate(`/details/${id}`)} 
+=======
+                onClick={() => navigate(`/details/${id}`)}
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 =======
                 onClick={() => navigate(`/details/${id}`)}
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9

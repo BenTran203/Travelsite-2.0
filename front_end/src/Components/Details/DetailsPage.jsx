@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./DetailsPage.scss"; // Optional: Create this file for custom styles
@@ -59,6 +60,8 @@ const DetailsPage = () => {
   if (!destination) {
     return <p>Destination not found!</p>;
 =======
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Data from '../Main/Main'; // Import your data file
@@ -72,6 +75,9 @@ const DetailsPage = () => {
 
   if (!destination) {
     return <h2>Destination not found</h2>;
+<<<<<<< HEAD
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
+=======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
   }
 
@@ -79,6 +85,7 @@ const DetailsPage = () => {
 
   return (
     <div className="details-page">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <div className="title">
       <h1>{desTitle}</h1>
@@ -99,6 +106,8 @@ const DetailsPage = () => {
         </p>
       </div>
 =======
+=======
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
       <button onClick={() => navigate(-1)} className="back-btn">← Back</button>
       <div className="details-container">
         <img src={imgSrc} alt={desTitle} />
@@ -106,6 +115,9 @@ const DetailsPage = () => {
         <p><strong>Location:</strong> {location}</p>
         <p><strong>Fees:</strong> {fees}</p>
         <p><strong>Description:</strong> {description}</p>
+<<<<<<< HEAD
+>>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
+=======
 >>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
       </div>
     </div>
