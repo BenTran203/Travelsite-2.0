@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.786d838e.css",
+    "main.js": "/static/js/main.fdd079ca.js",
+    "static/media/video1.mp4": "/static/media/video1.ce9f531fb03e9af19123.mp4",
+    "static/media/Uluru.jpg": "/static/media/Uluru.f5fbeba38f41859eb4fe.jpg",
+    "static/media/Opera House.jpg": "/static/media/Opera House.dc6b5379586afad7cfac.jpg",
+    "static/media/Great Barrier Reef.jpg": "/static/media/Great Barrier Reef.5ee1cddd1a3e6d16f72d.jpg",
+    "static/media/Bondi Beach.jpg": "/static/media/Bondi Beach.b12be5a28d2cb139a781.jpg",
+    "static/media/image 1.jpg": "/static/media/image 1.e5c28469557198ca8753.jpg",
+    "static/media/thailand lantern.jpg": "/static/media/thailand lantern.e8564b70c5a253623309.jpg",
+    "static/media/Ireland scenic view.jpg": "/static/media/Ireland scenic view.28fa16ba56efa9d2902d.jpg",
+    "static/media/iStock-1500563478.jpg": "/static/media/iStock-1500563478.dfbbdaedc22badaeb834.jpg",
+    "static/media/Image 2.jpg": "/static/media/Image 2.3ed753ce1dd56a4f45d1.jpg",
+    "static/media/Great Ocean Road.jpg": "/static/media/Great Ocean Road.99fc0650c1e73dc33d67.jpg",
+    "index.html": "/index.html",
+    "main.786d838e.css.map": "/static/css/main.786d838e.css.map",
+    "main.fdd079ca.js.map": "/static/js/main.fdd079ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.786d838e.css",
+    "static/js/main.fdd079ca.js"
+  ]
+}
