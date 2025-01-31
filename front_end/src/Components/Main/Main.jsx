@@ -1,12 +1,6 @@
 import React from "react";
 import "./main.scss";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
 
 import img1 from "../../Assets/Opera House.jpg";
 import img2 from "../../Assets/Great Barrier Reef.jpg";
@@ -16,14 +10,6 @@ import img5 from "../../Assets/Bondi Beach.jpg";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
-<<<<<<< HEAD
-<<<<<<< HEAD
-// import { Data } from "../../Assets/data.json";
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-
 
 const Data = [
   {
@@ -58,7 +44,6 @@ const Data = [
     imgSrc: img4,
     desTitle: "Great Ocean Road",
     location: "Victoria, Australia",
-
     fees: "Free (Self-Drive), $50 to $150 for guided tours",
     description:
       "The Great Ocean Road is an iconic coastal drive stretching 243 kilometers along the southeastern coast of Australia. Famous for the Twelve Apostles rock formations and scenic views.",
@@ -68,7 +53,6 @@ const Data = [
     imgSrc: img5,
     desTitle: "Bondi Beach",
     location: "Bondi, Sydney NSW 2026, Australia",
-
     fees: "Free (Beach Access), $20 to $60 for surfing lessons",
     description:
       "Bondi Beach is one of the world’s most famous beaches, known for its golden sands and surfing waves. It’s a vibrant spot for both locals and tourists, offering various beachfront cafes and events.",
@@ -76,14 +60,8 @@ const Data = [
 ];
 
 const Main = () => {
-<<<<<<< HEAD
-<<<<<<< HEAD
   const navigate = useNavigate();
 
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
   return (
     <section className="main container section">
       <div className="sec-title">
@@ -92,59 +70,41 @@ const Main = () => {
         </h2>
       </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
       <div className="sec-content grid">
-        {Data.map(
-          ({ id, imgSrc, desTitle, location, grade, fees, description }) => {
-            return (
-              <div data-aos="fade-up" className="single-destination">
-                <div className="image-div">
-                  <img src={imgSrc} alt={desTitle}></img>
-                </div>
-                <div className="card-info">
-                  <h4 className="destination-title">{desTitle}</h4>
-                  <span className="location">
-                    <HiOutlineLocationMarker className="icon" />
-                    <span className="name">{location}</span>
-                  </span>
-
-                  <div className="fees flex">
-                    <div className="grade"></div>
-                    <div className="price">
-                      <h5>{fees}</h5>
-                    </div>
-                  </div>
-
-                  <div className="description">
-                    <p>{description}</p>
-                  </div>
-
-                  <button
-                className="btn flex"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                onClick={() => navigate(`/details/${id}`)} 
-=======
-                onClick={() => navigate(`/details/${id}`)}
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
-                onClick={() => navigate(`/details/${id}`)}
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-              >
-                DETAILS <HiOutlineClipboardCheck className="icon" />
-              </button>
-                </div>
+        {Data.map(({ id, imgSrc, desTitle, location, fees, description }) => {
+          return (
+            <div key={id} data-aos="fade-up" className="single-destination">
+              <div className="image-div">
+                <img src={imgSrc} alt={desTitle}></img>
               </div>
-            );
-          }
-        )}
+              <div className="card-info">
+                <h4 className="destination-title">{desTitle}</h4>
+                <span className="location">
+                  <HiOutlineLocationMarker className="icon" />
+                  <span className="name">{location}</span>
+                </span>
+
+                <div className="fees flex">
+                  <div className="grade"></div>
+                  <div className="price">
+                    <h5>{fees}</h5>
+                  </div>
+                </div>
+
+                <div className="description">
+                  <p>{description}</p>
+                </div>
+
+                <button
+                  className="btn flex"
+                  onClick={() => navigate(`/details/${id}`)}
+                >
+                  DETAILS <HiOutlineClipboardCheck className="icon" />
+                </button>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

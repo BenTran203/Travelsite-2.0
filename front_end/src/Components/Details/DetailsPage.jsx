@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./DetailsPage.scss"; // Optional: Create this file for custom styles
@@ -57,71 +55,44 @@ const DetailsPage = () => {
   const { id } = useParams();
   const destination = Data.find((item) => item.id === parseInt(id));
 
-  if (!destination) {
-    return <p>Destination not found!</p>;
-=======
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import Data from '../Main/Main'; // Import your data file
+      // Find the destination by ID
+      if (!destination) {
+        return <h2>Destination not found</h2>;
+      }
 
-const DetailsPage = () => {
-  const { id } = useParams(); // Extract ID from URL
-  const navigate = useNavigate();
+      const { imgSrc, desTitle, location, fees, description } = destination;
 
-  // Find the destination by ID
-  const destination = Data.find((item) => item.id === parseInt(id));
+      return (
+        <div className="details-page">
+          <div className="title">
+            <h1>{desTitle}</h1>
+          </div>
+          <div className="detail-page-content">
+            <div className="details-header">
+              <img src={imgSrc} alt={desTitle} className="img" />
+            </div>
+            <div className="details-content">
+              <p>
+                <strong>Location:</strong> {location}
+              </p>
+              <p>
+                <strong>Fees:</strong> {fees}
+              </p>
+              <p>
+                {/* <strong>Description:</strong> {description} */}
+              </p>
+            </div>
+            <button onClick={() => navigate(-1)} className="back-btn">← Back</button>
+            <div className="details-container">
+              <img src={imgSrc} alt={desTitle} />
+              <h1>{desTitle}</h1>
+              <p><strong>Location:</strong> {location}</p>
+              <p><strong>Fees:</strong> {fees}</p>
+              <p><strong>Description:</strong> {description}</p>
+            </div>
+          </div>
+        </div>
+      );
+    };
 
-  if (!destination) {
-    return <h2>Destination not found</h2>;
-<<<<<<< HEAD
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-  }
-
-  const { imgSrc, desTitle, location, fees, description } = destination;
-
-  return (
-    <div className="details-page">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <div className="title">
-      <h1>{desTitle}</h1>
-      </div>
-      <div className="detail-page-content">
-      <div className="details-header">
-        <img src={imgSrc} alt={desTitle} className="img" />
-      </div>
-      <div className="details-content">
-        <p>
-          <strong>Location:</strong> {location}
-        </p>
-        <p>
-          <strong>Fees:</strong> {fees}
-        </p>
-        <p>
-          {/* <strong>Description:</strong> {description} */}
-        </p>
-      </div>
-=======
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-      <button onClick={() => navigate(-1)} className="back-btn">← Back</button>
-      <div className="details-container">
-        <img src={imgSrc} alt={desTitle} />
-        <h1>{desTitle}</h1>
-        <p><strong>Location:</strong> {location}</p>
-        <p><strong>Fees:</strong> {fees}</p>
-        <p><strong>Description:</strong> {description}</p>
-<<<<<<< HEAD
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-=======
->>>>>>> 7981edfc339698238ff281551f2604429dc14ce9
-      </div>
-    </div>
-  );
-};
-
-export default DetailsPage;
+    export default DetailsPage;
