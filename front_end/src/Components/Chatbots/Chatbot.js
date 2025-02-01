@@ -15,7 +15,7 @@ const Chatbot = () => {
     setMessages([...messages, userMessage]);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/chat', { message: input });
+      const response = await axios.post('https://travelsite-2-0.onrender.com/api/chat', { message: input });
       const botMessage = { sender: 'bot', text: response.data.reply };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
