@@ -19,7 +19,7 @@ const Navbar = () => {
         <section className='navBarSection'>
             <header className='header flex'>
                 <div className='logoDiv'>
-                    <a href="#" className='logo'>
+                    <a href="/Home" className='logo'>
                         <h1>Aussie Vacay.</h1>
                     </a>
                 </div>

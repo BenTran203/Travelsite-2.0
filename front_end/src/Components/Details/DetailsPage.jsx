@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./DetailsPage.scss"; // Optional: Create this file for custom styles
+import "./DetailsPage.scss";
 
-// Sample data (Alternatively, import this if it’s shared)
+// Sample data
 const Data = [
   {
     id: 1,
@@ -20,7 +20,7 @@ const Data = [
     location: "Cairns, Queensland, Australia",
     fees: "$100 to $250 for diving tours",
     description:
-      "The Great Barrier Reef is the world’s largest coral reef system, stretching over 2,300 kilometers. It’s a UNESCO World Heritage site and a top destination for snorkeling and scuba diving.",
+      "🏝️ Explore the Great Barrier Reef, one of the world's top snorkeling and diving destinations! 🌊 </br> 🐠 Dive into vibrant coral gardens, swim with sea turtles, or take a glass-bottom boat tour for a breathtaking view of marine life. 🚤 </br> ✨ For adventure seekers, try jet skiing, parasailing, or scenic helicopter rides over the stunning reef. 🚁🌞",
   },
   {
     id: 3,
@@ -55,44 +55,33 @@ const DetailsPage = () => {
   const { id } = useParams();
   const destination = Data.find((item) => item.id === parseInt(id));
 
-      // Find the destination by ID
-      if (!destination) {
-        return <h2>Destination not found</h2>;
-      }
-
-      const { imgSrc, desTitle, location, fees, description } = destination;
-
-      return (
-        <div className="details-page">
-          <div className="title">
-            <h1>{desTitle}</h1>
-          </div>
-          <div className="detail-page-content">
-            <div className="details-header">
-              <img src={imgSrc} alt={desTitle} className="img" />
-            </div>
-            <div className="details-content">
-              <p>
-                <strong>Location:</strong> {location}
-              </p>
-              <p>
-                <strong>Fees:</strong> {fees}
-              </p>
-              <p>
-                {/* <strong>Description:</strong> {description} */}
-              </p>
-            </div>
-            <button onClick={() => navigate(-1)} className="back-btn">← Back</button>
-            <div className="details-container">
-              <img src={imgSrc} alt={desTitle} />
-              <h1>{desTitle}</h1>
-              <p><strong>Location:</strong> {location}</p>
-              <p><strong>Fees:</strong> {fees}</p>
-              <p><strong>Description:</strong> {description}</p>
-            </div>
-          </div>
+  // Find the destination by ID
+  if (!destination) {
+    return <h2>Destination not found</h2>;
+  }
+  const { imgSrc, desTitle, location, fees, description } = destination;
+  return (
+    <div className="details-page">
+      <div className="detail-page-content">
+        <div className="details-content">
+          <h1>{desTitle}</h1>
+          <p>
+            <strong>Location:</strong> {location}
+          </p>
+          <p>
+            <strong>Fees:</strong> {fees}
+          </p>
+          <p>
+            <div dangerouslySetInnerHTML={{ __html: description }} />
+          </p>
+          <button type="button">Book now</button>
         </div>
-      );
-    };
+        <div className="details-header">
+          <img src={imgSrc} alt={desTitle} className="img" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-    export default DetailsPage;
+export default DetailsPage;
